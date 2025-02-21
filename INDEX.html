@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Webpage</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Interactive Button -->
+  <button id="toggleButton">Toggle Background Color</button>
+
+  <!-- Slider with Real-Time Feedback -->
+  <div>
+    <label for="sizeSlider">Adjust Text Size:</label>
+    <input type="range" id="sizeSlider" min="10" max="50" value="16">
+    <p id="resizableText">committed to maintaining open and transparent communication with our shareholders</p>
+  </div>
+
+  <!-- Modal -->
+  <button id="openModal">Open Modal</button>
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span id="closeModal">&times;</span>
+      <p>This is a modal!</p>
+    </div>
+  </div>
+
+  <!-- Form with Validation -->
+  <form id="validationForm">
+    <div>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name">
+      <span id="nameError" class="error"></span>
+    </div>
+    <div>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email">
+      <span id="emailError" class="error"></span>
+    </div>
+    <div>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password">
+      <span id="passwordError" class="error"></span>
+    </div>
+    <button type="submit">Submit</button>
+  </form>
+
+  <!-- Bonus: Dropdown Menu -->
+  <div>
+    <label for="dropdown">Choose an option:</label>
+    <select id="dropdown">
+      <option value="option1">Option 1</option>
+      <option value="option2">Option 2</option>
+      <option value="option3">Option 3</option>
+    </select>
+    <p id="dropdownMessage"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
